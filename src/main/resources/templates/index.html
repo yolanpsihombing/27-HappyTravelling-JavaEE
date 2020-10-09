@@ -31,8 +31,8 @@
 <br>
 
 	<div class="container">
-		<h1>Sukses Masuk!</h1>
-		Selamat Datang <span sec:authentication="principal.username">User</span>
+		<h1>Logged in Successfully!</h1>
+		Welcome <span sec:authentication="principal.username">User</span>
 		&emsp;<span sec:authentication="principal.authorities">User</span>
 	
 	<div sec:authorize="hasAnyAuthority('ROLE_ADMIN')" class="col-md-6" align="left">
@@ -46,8 +46,8 @@
 		  <thead>
 		    <tr>
 		      <th scope="col">No</th>
-		      <th scope="col">Nama depan</th>
-		      <th scope="col">Nama Belakang</th>
+		      <th scope="col">First Name</th>
+		      <th scope="col">Last Name</th>
 		      <th scope="col">Email</th>
 		      <th scope="col">Action</th>
 		    </tr>
@@ -67,7 +67,7 @@
 		</div>
 		
 	
-	<div sec:authorize="hasAnyAuthority('ROLE_USER')">
+	<!--< div sec:authorize="hasAnyAuthority('ROLE_USER')"> -->
 		
 		
 		<br>
